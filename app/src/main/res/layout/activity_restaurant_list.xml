@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RestaurantList">
+
+    <TextView
+        android:id="@+id/banner_restaurant_list"
+        android:layout_width="148dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:text="Restaurant List"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/banner_restaurant_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_test1"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test2"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test1"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test3"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test2"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test4"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test3"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test5"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test4"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test6"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test5"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <ImageView
+        android:id="@+id/image_test7"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_test7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_test6"
+        app:srcCompat="@drawable/restaurant_test" />
+
+    <TextView
+        android:id="@+id/text_test1"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test1"
+        app:layout_constraintTop_toBottomOf="@+id/banner_restaurant_list" />
+
+    <TextView
+        android:id="@+id/text_test2"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test2"
+        app:layout_constraintTop_toBottomOf="@+id/text_test1" />
+
+    <TextView
+        android:id="@+id/text_test3"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test3"
+        app:layout_constraintTop_toBottomOf="@+id/text_test2" />
+
+    <TextView
+        android:id="@+id/text_test4"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test4"
+        app:layout_constraintTop_toBottomOf="@+id/text_test3" />
+
+    <TextView
+        android:id="@+id/text_test5"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test5"
+        app:layout_constraintTop_toBottomOf="@+id/text_test4" />
+
+    <TextView
+        android:id="@+id/text_test6"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test6"
+        app:layout_constraintTop_toBottomOf="@+id/text_test5" />
+
+    <TextView
+        android:id="@+id/text_test7"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Restaurant Vegetarian - London UK post code E14 RFG - Vegetarian Food Speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_test7"
+        app:layout_constraintTop_toBottomOf="@+id/text_test6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
