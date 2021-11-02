@@ -4,99 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_img_app"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/banner"
-        android:layout_width="302dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginRight="106dp"
-        android:text=" FOOD for FOODies"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    <View
+        android:id="@+id/lgform_container_components"
+        style="@style/LoginFormContainerComponents"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
         android:id="@+id/email"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:drawableRight="@drawable/ic_email"
         android:ems="10"
-        android:hint="Email"
+        android:hint="user@email.com"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner" />
+        app:layout_constraintEnd_toEndOf="@+id/lgform_container_components"
+        app:layout_constraintStart_toStartOf="@+id/lgform_container_components"
+        app:layout_constraintTop_toTopOf="@+id/lgform_container_components" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="299dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginLeft="58dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_eye"
         android:ems="10"
-        android:hint="Password"
+        android:hint="********************"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lgform_container_components"
+        app:layout_constraintStart_toStartOf="@+id/lgform_container_components"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/signIn"
-        android:layout_width="298dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginLeft="58dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/deep_saffron"
         android:text="Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/lgform_container_components"
+        app:layout_constraintEnd_toEndOf="@+id/lgform_container_components"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/lgform_container_components"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:text="Forgot Password"
+        android:text="FORGOT PASSWORD"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.179" />
 
     <TextView
         android:id="@+id/register"
-        android:layout_width="61dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginLeft="175dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="175dp"
-        android:layout_marginRight="175dp"
-        android:text="Register"
+        android:layout_width="68dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="REGISTER"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signIn" />
+        app:layout_constraintTop_toBottomOf="@+id/lgform_container_components" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -112,5 +92,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="269dp"
+        android:layout_height="49dp"
+        android:fontFamily="casual"
+        android:text=" FOOD for FOODies"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toTopOf="@+id/lgform_container_components"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.138" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
