@@ -110,6 +110,7 @@
         android:layout_width="269dp"
         android:layout_height="49dp"
         android:fontFamily="casual"
+
         android:text=" FOOD for FOODies"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="30sp"
