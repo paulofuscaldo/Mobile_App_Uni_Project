@@ -2,77 +2,103 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bg_img_app"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_img_app"
     tools:context=".ProfileActivity">
 
-    <TextView
-        android:id="@+id/firstname"
-        android:layout_width="167dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
+
+    <View
+        android:id="@+id/view_welcoming_container"
+        style="@style/WelcomingContainer"
+
+        android:layout_width="376dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/FirstNameTitle"
-        app:layout_constraintTop_toBottomOf="@+id/greeting" />
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="247dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/emailAddressTitle"
-        app:layout_constraintTop_toBottomOf="@+id/surname" />
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
+        app:layout_constraintTop_toTopOf="@id/view_welcoming_container" />
 
     <TextView
         android:id="@+id/FirstNameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="278dp"
-        android:layout_marginRight="278dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
         android:text="First Name:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
+        app:layout_constraintTop_toBottomOf="@id/greeting" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/FirstNameTitle"
         app:layout_constraintTop_toBottomOf="@+id/greeting" />
 
     <TextView
-        android:id="@+id/greeting"
-        android:layout_width="248dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signOut" />
+        android:id="@+id/SurNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Surname:"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
+        app:layout_constraintTop_toBottomOf="@+id/FirstNameTitle" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
+        app:layout_constraintStart_toEndOf="@+id/SurNameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
 
     <TextView
         android:id="@+id/emailAddressTitle"
         android:layout_width="95dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginRight="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Email Address:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SurNameTitle" />
+        app:layout_constraintBottom_toBottomOf="@id/view_welcoming_container"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
+        app:layout_constraintTop_toBottomOf="@+id/SurNameTitle"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_welcoming_container"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/emailAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/surname"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/signOut"
@@ -80,13 +106,17 @@
         android:layout_height="36dp"
         android:layout_marginStart="290dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:backgroundTint="@color/red"
         android:text="Logout"
+        app:layout_constraintBottom_toTopOf="@+id/view_welcoming_container"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/text_partner_restaurant_list"
@@ -94,14 +124,15 @@
         android:layout_height="53dp"
         android:layout_marginStart="99dp"
         android:layout_marginLeft="99dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="94dp"
         android:layout_marginRight="94dp"
         android:text="Hey Foodie ! We have a list of Restaurants waiting for you!"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/view_welcoming_container" />
 
     <TextView
         android:id="@+id/text_partner_street_list"
@@ -121,12 +152,9 @@
         android:id="@+id/btn_restaurant_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginRight="121dp"
-        android:text="Restaurant List"
+        android:backgroundTint="@color/deep_saffron"
+        android:text="Restaurants"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_partner_restaurant_list" />
@@ -140,37 +168,13 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="138dp"
         android:layout_marginRight="138dp"
-        android:text="Street List"
+        android:backgroundTint="@color/deep_saffron"
+        android:text="Street Food"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_partner_street_list" />
 
-    <TextView
-        android:id="@+id/SurNameTitle"
-        android:layout_width="73dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="274dp"
-        android:layout_marginRight="274dp"
-        android:text="Surname:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FirstNameTitle" />
 
-    <TextView
-        android:id="@+id/surname"
-        android:layout_width="220dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/SurNameTitle"
-        app:layout_constraintTop_toBottomOf="@+id/firstname" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

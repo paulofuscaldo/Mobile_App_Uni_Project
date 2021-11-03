@@ -32,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        getSupportActionBar().hide();
 
         restaurantList = (Button) findViewById(R.id.btn_restaurant_list);
         restaurantList.setOnClickListener(this);
