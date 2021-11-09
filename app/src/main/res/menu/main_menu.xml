@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Main_Menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Main Menu"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/Profile"
+        android:title="Profile"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/Restaurant"
+        android:title="Restaurant"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/StreetFood"
+        android:title="Street Food"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/Forum"
+        android:title="Forum"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/Logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+
+
+</menu>
