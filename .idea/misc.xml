@@ -16,12 +16,21 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_street_list.xml" value="0.4" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/drawable/ic_menu_bar.xml" value="0.16927083333333334" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15413533834586465" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_forum.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main_menu.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main_menu2.xml" value="0.1585144927536232" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_restaurant_list.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_street_list.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_street_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.153125" />
+        <entry key="app/src/main/res/menu/main_manu.xml" value="0.1046875" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.153125" />
+        <entry key="app/src/main/res/menu/tool_menu.xml" value="0.153125" />
       </map>
     </option>
   </component>

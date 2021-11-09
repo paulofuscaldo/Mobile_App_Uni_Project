@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Test">
         <activity
+            android:name=".ForumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".StreetList"
             android:exported="false" />
         <activity
