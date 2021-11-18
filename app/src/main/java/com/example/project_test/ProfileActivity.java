@@ -109,7 +109,7 @@ public class ProfileActivity extends AppCompatActivity {
                     String surname = userProfile.surname;
                     String email = userProfile.email;
 
-                    greetingTextView.setText("Welcome, " + firstname + "!");
+
                     firstnameTextView.setText(firstname);
                     surnameTextView.setText(surname);
                     emailTextView.setText(email);

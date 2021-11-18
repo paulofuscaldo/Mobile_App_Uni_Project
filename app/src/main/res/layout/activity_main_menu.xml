@@ -8,76 +8,70 @@
     tools:context=".MainMenuActivity">
 
 
-    <TextView
-        android:id="@+id/greeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/view_welcoming"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
-
     <View
         android:id="@+id/view_welcoming"
         style="@style/WelcomingContainer"
         android:layout_width="373dp"
         android:layout_height="322dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="256dp"
         tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="191dp"
-        android:layout_height="36dp"
-        android:text="Hey Foodie ! We have a list of Restaurants waiting for you!"
-        app:layout_constraintBottom_toTopOf="@+id/btn_restaurant_list"
-        app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
-        app:layout_constraintStart_toStartOf="@+id/view_welcoming"
-        app:layout_constraintTop_toTopOf="@+id/view_welcoming" />
 
     <Button
         android:id="@+id/btn_restaurant_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:backgroundTint="@color/deep_saffron"
         android:text="Restaurants"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
-        app:layout_constraintStart_toStartOf="@+id/view_welcoming" />
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="230dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="32dp"
-        android:text="Now, if you want something more adventure we have some Street's Foodie spots too !"
-        app:layout_constraintBottom_toTopOf="@+id/btn_street_list"
-        app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/view_welcoming" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming"
+        tools:layout_editor_absoluteY="351dp" />
 
     <Button
         android:id="@+id/btn_street_list"
+        android:backgroundTint="@color/deep_saffron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/deep_saffron"
+        android:layout_marginBottom="24dp"
         android:text="Street Food"
         app:layout_constraintBottom_toBottomOf="@+id/view_welcoming"
         app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
         app:layout_constraintStart_toStartOf="@+id/view_welcoming" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="191dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="Hey Foodie ! We have a list of Restaurants waiting for you!"
+        app:layout_constraintBottom_toTopOf="@+id/btn_restaurant_list"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming"
+        app:layout_constraintTop_toTopOf="@+id/view_welcoming"
+        app:layout_constraintVertical_bias="1.0" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="230dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:text="Now, if you want something more adventure we have some Street's Foodie spots too !"
+        app:layout_constraintBottom_toTopOf="@+id/btn_street_list"
+        app:layout_constraintEnd_toEndOf="@+id/view_welcoming"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/view_welcoming"
+        app:layout_constraintTop_toBottomOf="@+id/btn_restaurant_list"
+        app:layout_constraintVertical_bias="0.0" />
 
-
-
-
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="216dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_welcoming"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        tools:layout_editor_absoluteX="97dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

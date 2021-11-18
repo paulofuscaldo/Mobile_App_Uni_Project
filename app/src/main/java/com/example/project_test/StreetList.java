@@ -15,10 +15,8 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-public class StreetList extends AppCompatActivity implements View.OnClickListener {
+public class StreetList extends AppCompatActivity  {
 
-    //- Back Button
-    private Button back;
 
 
     ImageView iv;
@@ -85,9 +83,7 @@ public class StreetList extends AppCompatActivity implements View.OnClickListene
            }
        });
 
-       // - back Button
-        back = (Button) findViewById(R.id.btn_back);
-        back.setOnClickListener(this);
+
 
     }
 
@@ -102,12 +98,5 @@ public class StreetList extends AppCompatActivity implements View.OnClickListene
         }
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_back:
-                startActivity(new Intent(this, ProfileActivity.class));
-                break;
-        }
-    }
+
 }

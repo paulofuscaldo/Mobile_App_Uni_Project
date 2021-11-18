@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Test">
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
             android:name=".ForumActivity"
             android:exported="false" />
         <activity
