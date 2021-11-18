@@ -1,5 +1,29 @@
 <resources>
     <string name="app_name">Food_for_Foodies</string>
 
+    <string-array name="restaurant_list">
+        <item>Manthan</item>
+        <item>Vardo</item>
+        <item>El North</item>
+        <item>Piatto</item>
+        <item>Vardo</item>
+        <item>The Ninth</item>
+        <item>Chicana</item>
+        <item>Kurtir</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>This is random description1. This is random description1. This is random description1.
+        This is random description1. This is random description1. This is random description1.</item>
+        <item>This is random description2.</item>
+        <item>This is random description3.</item>
+        <item>This is random description4.</item>
+        <item>This is random description5.</item>
+        <item>This is random description6.</item>
+        <item>This is random description7.</item>
+
+
+    </string-array>
 
 </resources>

@@ -14,25 +14,37 @@
             android:exported="false" />
         <activity
             android:name=".ForumActivity"
+            android:label="Forum"
             android:exported="false" />
         <activity
             android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
             android:name=".StreetList"
+            android:parentActivityName=".MainMenuActivity"
+            android:label="StreetList"
             android:exported="false" />
         <activity
             android:name=".RestaurantList"
+            android:label="Restaurant List"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantSingle"
+            android:parentActivityName=".RestaurantList"
+            android:label="Restaurant Details"
             android:exported="false" />
         <activity
             android:name=".forgotPassword"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
+            android:label="Profile"
             android:exported="false" />
         <activity
             android:name=".RegisterUser"
+            android:label="Register User"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

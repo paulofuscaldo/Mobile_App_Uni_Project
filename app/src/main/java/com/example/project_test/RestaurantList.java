@@ -2,6 +2,8 @@ package com.example.project_test;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +16,17 @@ import android.widget.Button;
 public class RestaurantList extends AppCompatActivity  {
 
 
+    String s1[], s2[];
+    int images[] = {R.drawable.manthan,R.drawable.vardo,R.drawable.el_north,
+    R.drawable.piatto,R.drawable.the_ninth,R.drawable.chicama,R.drawable.kurtir};
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -50,12 +57,21 @@ public class RestaurantList extends AppCompatActivity  {
         return super.onOptionsItemSelected(item);
     }
 
+    RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_list);
 
+        recyclerView = findViewById(R.id.recyclerView);
 
+      s1 = getResources().getStringArray(R.array.restaurant_list);
+      s2 = getResources().getStringArray(R.array.description);
+
+      MyAdapter myAdapter = new MyAdapter(this, s1, s2, images);
+      recyclerView.setAdapter(myAdapter);
+      recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
 
