@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Food for Foodies"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Test">
@@ -14,6 +14,7 @@
             android:exported="false" />
         <activity
             android:name=".ForumActivity"
+            android:parentActivityName=".MainMenuActivity"
             android:label="Forum"
             android:exported="false" />
         <activity
@@ -26,6 +27,7 @@
             android:exported="false" />
         <activity
             android:name=".RestaurantList"
+            android:parentActivityName=".MainMenuActivity"
             android:label="Restaurant List"
             android:exported="false" />
         <activity
@@ -35,13 +37,16 @@
             android:exported="false" />
         <activity
             android:name=".forgotPassword"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
+            android:parentActivityName=".MainMenuActivity"
             android:label="Profile"
             android:exported="false" />
         <activity
             android:name=".RegisterUser"
+            android:parentActivityName=".MainMenuActivity"
             android:label="Register User"
             android:exported="false" />
 
