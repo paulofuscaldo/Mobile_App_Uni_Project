@@ -29,6 +29,8 @@ public class ProfileActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private String userID;
     private Button logout;
+    //Create button to call the edit profile screen
+    private Button btnCallEditProfile;
 
 
 
@@ -77,9 +79,17 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         getSupportActionBar();
 
+        //Assign to btnCallEditProfile the button id
+        btnCallEditProfile = findViewById(R.id.btn_call_edit_profile);
 
-
-
+        //Created an intent to call the edit profile screen
+        btnCallEditProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ProfileActivity.this, EditProfile.class);
+                startActivity(i);
+            }
+        });
 
         logout = (Button) findViewById(R.id.signOut);
         logout.setOnClickListener(new View.OnClickListener() {
@@ -121,6 +131,9 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(ProfileActivity.this, "Something wrong happened!", Toast.LENGTH_LONG).show();
             }
         });
+
+
+
     }
 
 

@@ -9,43 +9,38 @@
 
 
     <View
-        android:id="@+id/view_welcoming_container"
-        style="@style/WelcomingContainer"
+        android:id="@+id/container_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
 
-        android:layout_width="376dp"
-        android:layout_height="187dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="96dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_user_profile_picture"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/greeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
-        app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
-        app:layout_constraintTop_toTopOf="@id/view_welcoming_container" />
+    <View
+        android:id="@+id/view_welcoming_container"
+        style="@style/WelcomingContainer"
+        android:layout_width="379dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_user" />
+
+
 
     <TextView
         android:id="@+id/FirstNameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="20dp"
         android:text="First Name:"
         app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
-        app:layout_constraintTop_toBottomOf="@id/greeting" />
+        app:layout_constraintTop_toTopOf="@+id/view_welcoming_container" />
 
     <TextView
         android:id="@+id/firstname"
@@ -55,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view_welcoming_container"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toEndOf="@+id/FirstNameTitle"
-        app:layout_constraintTop_toBottomOf="@+id/greeting" />
+        app:layout_constraintTop_toTopOf="@id/view_welcoming_container" />
 
     <TextView
         android:id="@+id/SurNameTitle"
@@ -84,7 +79,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:text="Email Address:"
         app:layout_constraintBottom_toBottomOf="@id/view_welcoming_container"
         app:layout_constraintStart_toStartOf="@+id/view_welcoming_container"
@@ -105,6 +99,21 @@
         app:layout_constraintTop_toBottomOf="@+id/surname"
         app:layout_constraintVertical_bias="0.4" />
 
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call_edit_profile" />
+
     <Button
         android:id="@+id/signOut"
         android:layout_width="105dp"
@@ -117,53 +126,20 @@
         android:backgroundTint="@color/red"
         android:text="Logout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_call_edit_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="138dp"
-        android:layout_marginLeft="138dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginRight="138dp"
         android:text="Edit Profile"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_welcoming_container" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginLeft="113dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="113dp"
-        android:layout_marginRight="113dp"
-        android:text="Change Password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <ImageView
-        android:id="@+id/profile_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginRight="138dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signOut"
-        app:srcCompat="@drawable/ic_launcher_background" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
