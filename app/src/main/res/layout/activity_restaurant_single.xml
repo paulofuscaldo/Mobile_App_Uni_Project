@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/opentable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
@@ -62,12 +62,12 @@
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
         android:text="Booking"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/reviewBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/reviewBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -76,12 +76,12 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:text="Reviews"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rating"
+        app:layout_constraintStart_toEndOf="@+id/opentable"
         app:layout_constraintTop_toBottomOf="@+id/description" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -91,6 +91,6 @@
         android:layout_marginRight="46dp"
         android:text="Rating"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/reviewBtn"
         app:layout_constraintTop_toBottomOf="@+id/description" />
 </androidx.constraintlayout.widget.ConstraintLayout>

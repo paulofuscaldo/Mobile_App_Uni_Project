@@ -10,46 +10,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Test">
         <activity
+            android:name=".Review"
+            android:label="Reviwe"
+            android:parentActivityName=".RestaurantList"
+            android:exported="false" />
+        <activity
+            android:name=".Rating"
+            android:exported="false"
+            android:label="Rating"
+            android:parentActivityName=".RestaurantList" />
+        <activity
             android:name=".EditProfile"
             android:exported="false" />
         <activity
             android:name=".ForumActivity"
-            android:parentActivityName=".MainMenuActivity"
+            android:exported="false"
             android:label="Forum"
-            android:exported="false" />
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
             android:name=".StreetList"
-            android:parentActivityName=".MainMenuActivity"
+            android:exported="false"
             android:label="StreetList"
-            android:exported="false" />
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".RestaurantList"
-            android:parentActivityName=".MainMenuActivity"
+            android:exported="false"
             android:label="Restaurant List"
-            android:exported="false" />
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".RestaurantSingle"
-            android:parentActivityName=".RestaurantList"
+            android:exported="false"
             android:label="Restaurant Details"
-            android:exported="false" />
+            android:parentActivityName=".RestaurantList" />
         <activity
             android:name=".forgotPassword"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ProfileActivity"
-            android:parentActivityName=".MainMenuActivity"
+            android:exported="false"
             android:label="Profile"
-            android:exported="false" />
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".RegisterUser"
-            android:parentActivityName=".MainMenuActivity"
+            android:exported="false"
             android:label="Register User"
-            android:exported="false" />
-
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
