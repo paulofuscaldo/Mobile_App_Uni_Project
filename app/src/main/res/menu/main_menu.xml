@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+
     <item android:id="@+id/Main_Menu"
-        android:icon="@drawable/ic_menu"
+        android:icon="@drawable/ic_home"
         android:title="Main Menu"
         app:showAsAction="ifRoom" />
+
 
     <item android:id="@+id/Profile"
         android:title="Profile"

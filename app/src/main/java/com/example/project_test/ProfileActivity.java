@@ -91,14 +91,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        logout = (Button) findViewById(R.id.signOut);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(ProfileActivity.this, MainActivity.class));
-            }
-        });
+
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
