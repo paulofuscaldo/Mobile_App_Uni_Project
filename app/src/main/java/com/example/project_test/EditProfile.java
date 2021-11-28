@@ -34,6 +34,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -45,6 +46,7 @@ public class EditProfile extends AppCompatActivity {
     private Button btnSaveData;
     private ImageButton btnSaveImage;
     private ImageView selectImg;
+    private ImageButton btnSelectImg;
     private FirebaseUser user;
     private DatabaseReference reference;
     private StorageReference storageRef;
@@ -53,6 +55,7 @@ public class EditProfile extends AppCompatActivity {
 
     Uri imageUri;
     ProgressDialog progressDialog;
+
 
 //////////////////////MENU INSTANCE/////////////////////////////
 @Override
@@ -99,10 +102,12 @@ public boolean onCreateOptionsMenu(Menu menu) {
       setContentView(R.layout.activity_edit_profile);
 
 
+
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
         selectImg = findViewById(R.id.img_placeholder);
+        btnSelectImg = findViewById(R.id.btnSelectImg);
         btnSaveData = findViewById(R.id.btn_edit_save_profile);
 
         //final View userPicture = findViewById(R.id.img_placeholder);
@@ -111,7 +116,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
         final EditText userEmail = findViewById(R.id.edit_em_profile);
 
         //Method to select the profile image
-        selectImg.setOnClickListener(new View.OnClickListener() {
+        btnSelectImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -128,6 +133,8 @@ public boolean onCreateOptionsMenu(Menu menu) {
                 saveImg();
             }
         });
+
+        //Retrieving User Profile Data
 
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -152,6 +159,8 @@ public boolean onCreateOptionsMenu(Menu menu) {
             }
         });
 
+        //Saving Profile's Edited Data
+
         btnSaveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,6 +172,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
                 updateData(fName, sName, email);
             }
         });
+
 
     }
 
@@ -223,6 +233,9 @@ public boolean onCreateOptionsMenu(Menu menu) {
         });
 
     }
+
+    //Retrieve Image
+
 
     //Update data of String type
     private void updateData(String fName, String sName, String email ){

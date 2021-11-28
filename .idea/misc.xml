@@ -6,6 +6,7 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/add_restaurant_textarea.xml" value="0.2703125" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/container_user_profile_picture.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/forgot_password_container.xml" value="0.2703125" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/ic_add_a_photo.xml" value="0.19270833333333334" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/ic_email.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/ic_home.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/ic_image_upload.xml" value="0.2203125" />
@@ -16,7 +17,7 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/register_container.xml" value="0.2703125" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/restaurant_single_container_component.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/drawable/welcoming_container.xml" value="0.2703125" />
-        <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_edit_profile.xml" value="0.264" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_edit_profile.xml" value="0.4" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_forgot_password.xml" value="0.4" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_form_add_restaurant_admin.xml" value="0.4" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/Mobile_App_Uni_Project/app/src/main/res/layout/activity_forum.xml" value="0.13020833333333334" />
