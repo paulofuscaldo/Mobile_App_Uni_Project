@@ -17,6 +17,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     String data1[], data2[];
     int images[];
+
     Context context;
 
     public MyAdapter(Context ct,String s1[],String s2[], int img[]){
@@ -24,6 +25,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
        data1 = s1;
        data2 = s2;
        images = img;
+
+
     }
 
     @NonNull
@@ -38,6 +41,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.text1.setText(data1[position]);
         holder.text2.setText(data2[position]);
+
         holder.restaurantImageView.setImageResource(images[position]);
 
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {

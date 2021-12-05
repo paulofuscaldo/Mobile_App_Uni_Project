@@ -2,28 +2,31 @@
     <string name="app_name">Food_for_Foodies</string>
 
     <string-array name="restaurant_list">
-        <item>Manthan</item>
-        <item>Vardo</item>
+        <item>Chicana</item>
         <item>El North</item>
+        <item>Kurtir</item>
+        <item>Manthan</item>
         <item>Piatto</item>
         <item>The Ninth</item>
-        <item>Chicana</item>
-        <item>Kurtir</item>
+        <item>Vardo</item>
 
 
     </string-array>
 
     <string-array name="description">
-        <item>This is random description1. This is random description1. This is random description1.
-        This is random description1. This is random description1. This is random description1.</item>
-        <item>This is random description2.</item>
-        <item>This is random description3.</item>
-        <item>This is random description4.</item>
-        <item>This is random description5.</item>
-        <item>This is random description6.</item>
-        <item>This is random description7.</item>
+        <item> food of Peru and the bold-flavours of Peruvian cuisine. Fish is delivered daily from Cornwall and the vegetable dishes make inventive use of seasonal British produce.</item>
+        <item>Spanish Restaurant/Bar Bringing the most popular dishes from Spain with a modern twist. Signature dishes include truffle tortilla, creamy croquettes,premium steak... and many more!</item>
+        <item>Kutir is from the stories of India’s wildlife and countryside, drawing influence from their early careers working in luxury properties nestled away in India’s forestry.</item>
+        <item> Dishes range from house-glazed Ham Yard ham and hand rolled pasta to chilli beans on toast and ice cream sandwiches and not forgetting the ever popular Champagne afternoon teas. </item>
+        <item>Enjoy our Mediterranean/ middle Eastern dishes with our signature Falafel or our well marinated Lamb chops grill, Lamb skewers</item>
+        <item>the world shares the same passion for good Italian food, made with high-quality and fresh ingredients to enjoy in small plates Food to share, pasta, pizza and salads. </item>
+        <item>menu is equally steak and seafood, receiving some of the freshest produce from Brixham Market and high standard UK beef, as well as cocktails made by award-winning bartenders.</item>
 
 
     </string-array>
+
+
+
+
 
 </resources>
