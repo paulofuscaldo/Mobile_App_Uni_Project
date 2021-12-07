@@ -16,15 +16,17 @@ import android.widget.Button;
 public class RestaurantList extends AppCompatActivity  {
 
 
+   // Alphabetic order
     String s1[], s2[];
-    int images[] = {R.drawable.manthan,R.drawable.vardo,R.drawable.el_north,
-    R.drawable.piatto,R.drawable.the_ninth,R.drawable.chicama,R.drawable.kurtir};
+    int images[] = {R.drawable.chicama,R.drawable.el_north,R.drawable.kurtir,
+            R.drawable.manthan,R.drawable.piatto,R.drawable.the_ninth,R.drawable.vardo};
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+
 
 
 
@@ -66,14 +68,17 @@ public class RestaurantList extends AppCompatActivity  {
 
         recyclerView = findViewById(R.id.recyclerView);
 
+
       s1 = getResources().getStringArray(R.array.restaurant_list);
       s2 = getResources().getStringArray(R.array.description);
+
 
       MyAdapter myAdapter = new MyAdapter(this, s1, s2, images);
       recyclerView.setAdapter(myAdapter);
       recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
+
 
 
 }

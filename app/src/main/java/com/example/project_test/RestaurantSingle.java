@@ -28,12 +28,16 @@ public class RestaurantSingle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_single);
 
+
+
+
         findViewById(R.id.opentable).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clicked_btn("https://www.opentable.com/r/kutir-chelsea-london-2?corrid=8adea7cb-dd3c-462c-903f-cba115187d15&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2021-11-21T23%3A00%3A00");
             }
         });
+
 
 
        rating = (Button) findViewById(R.id.btn_rating);
@@ -70,8 +74,6 @@ public class RestaurantSingle extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-
 
     private void getData() {
         if(getIntent().hasExtra("restaurantImageView") && getIntent().hasExtra("data1") &&
