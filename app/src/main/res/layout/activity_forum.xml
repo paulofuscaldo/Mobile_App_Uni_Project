@@ -6,18 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".ForumActivity">
 
+    <EditText
+        android:id="@+id/choose_topic_forum"
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="Write a topic"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_user_forum" />
+
+    <EditText
+        android:id="@+id/name_user_forum"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btn_save_topic"
+        android:layout_width="237dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_topic_forum" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="135dp"
         android:layout_height="51dp"
         android:layout_marginStart="138dp"
         android:layout_marginLeft="138dp"
-        android:layout_marginTop="127dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="138dp"
         android:layout_marginRight="138dp"
         android:text="Forum"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_topics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="Topics under discussion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_topic" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
